@@ -1,0 +1,25 @@
+{
+  "name": "otus-js-basic-weather",
+  "version": "1.0.0",
+  "description": "Приложение \"Погода\"",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewZavarykin/otus-js-basic-weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewZavarykin/otus-js-basic-weather/issues"
+  },
+  "homepage": "https://github.com/andrewZavarykin/otus-js-basic-weather#readme",
+  "devDependencies": {
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  }
+}

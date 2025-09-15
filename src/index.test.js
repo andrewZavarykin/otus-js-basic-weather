@@ -1,4 +1,4 @@
-import {greetings} from './index.js'
+import {greetings} from './index.js';
 
 describe('test greetings', () => {
     const element = document.querySelector('p');
@@ -11,5 +11,5 @@ describe('test greetings', () => {
     });
     test('class is hello', () => {
         expect(element.className).toBe('hello');
-    })
-})
+    });
+});

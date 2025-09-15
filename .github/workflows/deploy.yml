@@ -1,5 +1,5 @@
 name: deploy to GitHub Pages
-run-name: continuous deployment 
+run-name: continuous deployment
 on:
   push:
     branches: [master]

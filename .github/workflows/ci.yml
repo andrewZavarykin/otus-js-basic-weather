@@ -1,5 +1,5 @@
 name: build & test & lint
-run-name: continuous integration 
+run-name: continuous integration
 on: [push, pull_request]
 jobs:
   test:

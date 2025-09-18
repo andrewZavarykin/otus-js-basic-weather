@@ -1,5 +1,7 @@
 import { renderH1 } from "./index.js";
 import { renderForm } from "./index.js";
+import { getMyLocation } from "./index.js";
+import { getMyIP } from "./index.js";
 
 describe("test render h1", () => {
   const elH1 = document.querySelector(".header-appName");
@@ -20,5 +22,27 @@ describe("test render form", () => {
   });
   test("form is exists", () => {
     expect(elForm).not.toBeNull();
+  });
+});
+
+describe("test getMyLocation", () => {
+  test("is a function", () => {
+    const type = typeof getMyLocation;
+    expect(type).toBe("function");
+  });
+  test("return Tver", () => {
+    const city = getMyLocation();
+    expect(city).toBe("Tver");
+  });
+});
+
+describe("test getMyIP", () => {
+  test("is a function", () => {
+    const type = typeof getMyIP;
+    expect(type).toBe("function");
+  });
+  test("should return 5.167.98.198", () => {
+    const ip = getMyIP();
+    expect(ip).toBe("5.167.98.198");
   });
 });

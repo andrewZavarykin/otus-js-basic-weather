@@ -45,6 +45,19 @@ export function handleForm() {
   });
 }
 
+export function getMyLocation() {
+  return "Tver";
+}
+
+export async function getMyIP() {
+  const url = "https://get.geojs.io/v1/ip";
+  const response = await fetch(url);
+  const result = await response.text();
+  console.log(result);
+  return result;
+}
+
 renderH1();
 renderForm();
 handleForm();
+getMyIP();
